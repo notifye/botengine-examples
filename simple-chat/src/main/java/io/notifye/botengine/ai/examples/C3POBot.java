@@ -71,7 +71,7 @@ public class C3POBot {
                                           .name("choosing a person")
                                           .action("theForce")
                                           .triggers(Arrays.asList("theForce"))
-                                          .userSays(Arrays.asList("I would like to be a @persons:persons."))
+                                          .userSays(Arrays.asList("I would like to be a {{persons:persons}}."))
                                           .entities(Arrays.asList(Entity.builder()
                                                               .name("persons")
                                                               .entries(Arrays.asList(Entry.builder()
@@ -88,7 +88,7 @@ public class C3POBot {
                                           .parameters(Arrays.asList(
                                                        Parameter.builder()
                                                               .alias("persons")
-                                                              .entity("@persons")
+                                                              .entity("persons")
                                                               .prompts(Arrays.asList("Which person are you interested in?"))
                                                               .build()))
                                           .responses(Arrays.asList(ResponseInteraction.builder()
